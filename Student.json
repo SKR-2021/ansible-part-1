@@ -1,0 +1,21 @@
+{
+    "Name": "Andy Jason",
+    "Dob": "01-01-01",
+    "Town": "united States",
+    "Address": [
+        {
+            "Type": "Perm",
+            "Door-no": "01-55",
+            "Street Name": "Paul Kruger",
+            "City": "WDC",
+            "Pin code": "500125222"
+        },
+        {
+            "Type": "Temp",
+            "Door-no": "01-55",
+            "Street Name": "Paul Kruger",
+            "City": "WDC",
+            "Pin code": "500125222"
+        }
+    ]
+}

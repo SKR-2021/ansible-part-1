@@ -1,0 +1,29 @@
+- name: "Andy Jason"
+  dob: "01-01-01"
+  age: 25
+  country: "US"
+  addresses:
+  # Object
+  - type: "Perm"
+    Door-no: "010-125"
+    Street: "Paul Kruger"
+    city: "WDC"
+    pin: "012545"
+
+  - type: "Temporary"
+    Door-no: "010-125"
+    Street: "Paul Kruger"
+    city: "WDC"
+    pin: "012545"
+
+  skills:
+  - name: Java
+    topics: 
+    - core Java
+    - Json
+    - Java Script
+  - Python
+  - Ruby
+  - Go 
+  - DevOps
+  - SRE
