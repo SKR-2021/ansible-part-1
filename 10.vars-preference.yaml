@@ -14,5 +14,5 @@
   vars:
     NAME: Tasks Level
     ansible.builtin.debug:
-      msg "Name: {{ NAME }}"
+      msg: "Name: {{ NAME }}"
 
