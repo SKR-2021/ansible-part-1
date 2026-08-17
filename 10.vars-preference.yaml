@@ -5,7 +5,7 @@
     NAME: Playlevel 
   vars_files:
   - course.yaml
-  vars.prompt:
+  vars_prompt:
   - name: NAME
     prompt: What is your username?
     private: false
