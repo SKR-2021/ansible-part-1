@@ -9,6 +9,6 @@
   tasks:
   - name: print the course info
     vars:
-      COURSE: DEVOPS with AZURE
+      COURSE: DEVOPS with AZURE # Over right or inheritance 
     ansible.builtin.debug:
       msg: "Course is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer is: {{ TRAINER }}"
