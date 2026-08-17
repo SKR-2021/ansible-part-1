@@ -3,8 +3,8 @@
   connection: local
   vars:
     NAME: playlevel 
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: NAME
     prompt: What is your username?
@@ -20,4 +20,4 @@
 
 # 1. Args Or Command Level
 # 2. Task Level
-# 3. 
+# 3. File Level 
