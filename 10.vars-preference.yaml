@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NAME: Playlevel 
+    NAME: playlevel 
   vars_files:
   - course.yaml
   vars_prompt:
@@ -12,7 +12,7 @@
   tasks:
   - name: testing variables preference
   vars:
-    NAME: Tasks Level
+    NAME: tasks Level
     ansible.builtin.debug:
       msg: "Name: {{ NAME }}"
 
