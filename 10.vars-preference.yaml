@@ -6,9 +6,9 @@
   # vars_files:
   # - course.yaml
   vars_prompt:
-  - name: NAME
-    prompt: What is your username?
-    private: false
+  # - name: NAME
+  #   prompt: What is your username?
+  #   private: false
   tasks:
   - name: testing variables preference
     # vars:
@@ -21,3 +21,4 @@
 # 1. Args Or Command Level
 # 2. Task Level
 # 3. File Level 
+# 4. Prompt Level
