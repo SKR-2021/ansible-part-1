@@ -1,17 +1,3 @@
-# - name: loops
-#   hosts: local
-#   connection: local
-
-#   tasks:
-#     - name: print names
-#       ansible.builtin.debug:
-#         msg: "Hello {{ item }}"
-#       loop:
-#         - John
-#         - Paul
-#         - Raj
-#         - Ramesh
-
 - name: loops
   hosts: local
   connection: local
