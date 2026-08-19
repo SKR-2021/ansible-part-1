@@ -3,6 +3,11 @@
   connection: local
   vars:
     technologies: DevOps, Ansible, Shell, Kubernetes # this is String
+    # dictionary == map 
+    tags:
+      Application: payment
+      Environment: dev
+
   tasks:
   - name: default variables 
     ansible.builtin.debug:
