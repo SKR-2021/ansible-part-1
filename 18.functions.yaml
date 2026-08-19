@@ -29,4 +29,4 @@
 
   - name: convert lis to map
     ansible.builtin.debug:
-      msg: "ListTags are {{ tags | items2dict }}"
+      msg: "ListTags are {{ ListTags | items2dict }}"
