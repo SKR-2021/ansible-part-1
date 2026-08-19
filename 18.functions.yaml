@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: DevOps, Ansible, Shell, Kubernetes # this is String
+
     # dictionary == map 
     tags:
       Application: payment
@@ -13,6 +14,7 @@
       value: payment
     - key: Environment
       value: dev
+
   tasks:
   - name: default variables 
     ansible.builtin.debug:
@@ -23,10 +25,12 @@
     ansible.builtin.debug:
       msg: "Technologies are: {{ technologies | split(',') }}"
 
+    # convert map to list
   - name: convert map to list
     ansible.builtin.debug:
       msg: "Tags are {{ tags | dict2items }}"
-
+       
+    # convert list to map
   - name: convert lis to map
     ansible.builtin.debug:
       msg: "ListTags are {{ ListTags | items2dict }}"
