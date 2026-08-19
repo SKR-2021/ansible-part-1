@@ -14,6 +14,10 @@
       msg: "Hello {{ name | default('ramesh') }}"
 
     # String convert to list
-  - name: default variables 
+  - name: convert string to list
     ansible.builtin.debug:
       msg: " Technologies are: {{ technologies | split(',') }}"
+
+  - name: convert map to list
+    nsible.builtin.debug:
+      msg: " Tags are {{ tags | dict2items }}"
