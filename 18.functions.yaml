@@ -5,7 +5,7 @@
     technologies: DevOps, Ansible, Shell, Kubernetes # this is String
     name: "Karunakar T TKK"
     Email: Info@gmail.com
-    ipaddress: 266.301.122.152
+    ipaddress: 172.31.5.0
 
     # dictionary == map 
     tags:
