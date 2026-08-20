@@ -77,6 +77,7 @@
     ansible.builtin.command: ls -ltr > /tmp/output.txt  # Error outcome FAILED
     # ansible.builtin.command: ls -ltr # outcome is success 
     register: redirect_output
+    ignore_errors: true
 
   - name: print the redirect_output
     ansible.builtin.debug:
