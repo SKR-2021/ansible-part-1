@@ -10,3 +10,7 @@
   - name: print user_output Info
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+
+  - name: create user dotmart
+    ansible.builtin.command: useradd dotmart
+    when: user_output.rc != 0
