@@ -82,3 +82,11 @@
   - name: print the redirect_output
     ansible.builtin.debug:
       msg: "{{ redirect_output }}"
+
+  - name: redirect the putput using shell
+    ansible.builtin.shell: ls -ltr > /tmp/output.txt 
+    register: redirect_output
+
+  - name: print the redirect_output shell
+    ansible.builtin.debug:
+      msg: "{{ redirect_output }}"
