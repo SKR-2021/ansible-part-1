@@ -1,0 +1,12 @@
+- name: user creation 
+  hosts: local
+  connection: local
+  tasks:
+  - name: check the user exist or not 
+    ansible.builtin.command: id dotmart
+    register: user_output
+    ignore_errors: true
+
+  - name: print user_output Info
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"
