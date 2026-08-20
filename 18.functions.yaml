@@ -4,6 +4,7 @@
   vars:
     technologies: DevOps, Ansible, Shell, Kubernetes # this is String
     name: "Karunakar T TKK"
+    Email: Info@gmail.com
 
     # dictionary == map 
     tags:
@@ -50,7 +51,10 @@
       dest: ./student-data.json
       content: "{{ student_yaml | to_nice_json }}"
 
-
   - name: convert to uppercase 
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert to uppercase 
+    ansible.builtin.debug:
+      msg: "{{ Email | lower }}"
